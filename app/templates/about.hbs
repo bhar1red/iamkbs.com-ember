@@ -1,0 +1,9 @@
+<h3> This is about page </h3>
+
+<h4> Skills </h4>
+  {{#if displayArrayFlags.skills}}
+    <button {{action 'hideCategory' 'skills' }}> click me to close skills </button>
+    {{resume.kbs-skills}}
+  {{else}}
+    <button {{action 'showCategory' 'skills'}}> click me to show skills </button>
+  {{/if}}
