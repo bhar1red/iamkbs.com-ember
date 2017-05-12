@@ -7,3 +7,21 @@
   {{else}}
     <button {{action 'showCategory' 'skills'}}> click me to show skills </button>
   {{/if}}
+
+<hr>
+<h4> Experience </h4>
+  {{#if displayArrayFlags.experience}}
+    <button {{action 'hideCategory' 'experience' }}> click me to close experience </button>
+    {{resume.kbs-experience}}
+  {{else}}
+    <button {{action 'showCategory' 'experience'}}> click me to show experience </button>
+  {{/if}}
+
+<hr>
+<h4> Education </h4>
+  {{#if displayArrayFlags.education}}
+    <button {{action 'hideCategory' 'education' }}> click me to close education </button>
+    {{resume.kbs-education}}
+  {{else}}
+    <button {{action 'showCategory' 'education'}}> click me to show education </button>
+  {{/if}}
