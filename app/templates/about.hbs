@@ -1,27 +1,20 @@
 <h3> This is about page </h3>
 
-<h4> Skills </h4>
   {{#if displayArrayFlags.skills}}
-    <button {{action 'hideCategory' 'skills' }}> click me to close skills </button>
+    <button type="button" class="btn btn-info btn-block" {{action 'hideCategory' 'skills' }}> Skills </button>
     {{resume.kbs-skills}}
   {{else}}
-    <button {{action 'showCategory' 'skills'}}> click me to show skills </button>
+    <button type="button" class="btn btn-info btn-block" {{action 'showCategory' 'skills'}}> Skills </button>
   {{/if}}
-
-<hr>
-<h4> Experience </h4>
   {{#if displayArrayFlags.experience}}
-    <button {{action 'hideCategory' 'experience' }}> click me to close experience </button>
+    <button  type="button" class="btn btn-info btn-block" {{action 'hideCategory' 'experience' }}> Experience </button>
     {{resume.kbs-experience}}
   {{else}}
-    <button {{action 'showCategory' 'experience'}}> click me to show experience </button>
+    <button  type="button" class="btn btn-info btn-block" {{action 'showCategory' 'experience'}}> Experience </button>
   {{/if}}
-
-<hr>
-<h4> Education </h4>
   {{#if displayArrayFlags.education}}
-    <button {{action 'hideCategory' 'education' }}> click me to close education </button>
+    <button  type="button" class="btn btn-info btn-block" {{action 'hideCategory' 'education' }}> Education </button>
     {{resume.kbs-education}}
   {{else}}
-    <button {{action 'showCategory' 'education'}}> click me to show education </button>
+    <button  type="button" class="btn btn-info btn-block" {{action 'showCategory' 'education'}}> Education </button>
   {{/if}}
